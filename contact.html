@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Gluch Real Estate</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="images/gluch-logo-header.png" alt="Gluch Real Estate Ltd." class="logo-img"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="developments.html">New Developments</a>
+      <a href="financing.html">Foreign Buyer Financing</a>
+      <a href="management.html">Property Management</a>
+      <a href="market-performance.html">Market Performance</a>
+      <a href="about.html">About Us</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary btn-small btn-contact-header active">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- INTRO -->
+  <section class="section-tight">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1 style="font-size:34px;margin:12px 0;">Let's talk about your next property</h1>
+      <p style="font-size:15px;color:#444;max-width:620px;">New developments, foreign-buyer financing, or property management &mdash; our team is here to help, wherever you're based.</p>
+    </div>
+  </section>
+
+  <!-- FORM + INFO -->
+  <section class="section section-alt">
+    <div class="container" style="display:flex;gap:56px;flex-wrap:wrap;">
+      <form style="flex:1.4;min-width:320px;display:flex;flex-direction:column;gap:16px;">
+        <div class="form-grid">
+          <label>Full name
+            <input type="text" name="name">
+          </label>
+          <label>Email
+            <input type="email" name="email">
+          </label>
+        </div>
+        <div class="form-grid">
+          <label>Phone
+            <input type="tel" name="phone">
+          </label>
+          <label>Country of residence
+            <input type="text" name="country">
+          </label>
+        </div>
+        <label>I'm interested in
+          <select name="interest">
+            <option>New Developments</option>
+            <option>Foreign Buyer Financing</option>
+            <option>Property Management</option>
+            <option>Selling / Letting a Property</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Message
+          <textarea name="message" rows="4"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start;border:none;">Send Message</button>
+      </form>
+      <div style="flex:1;min-width:260px;display:flex;flex-direction:column;gap:20px;">
+        <div>
+          <h4 style="font-size:13px;font-weight:700;margin-bottom:8px;">OFFICE</h4>
+          <p style="font-size:14px;color:#444;line-height:1.7;">Gluch Real Estate Ltd.<br>Hatayasim Street<br>Ra'anana, Israel</p>
+        </div>
+        <div>
+          <h4 style="font-size:13px;font-weight:700;margin-bottom:8px;">PHONE &amp; EMAIL</h4>
+          <p style="font-size:14px;color:#444;line-height:1.7;">Eric Gluch: +972 54 595 0600 &middot; <a href="mailto:ericgluch@gmail.com" style="color:inherit;">ericgluch@gmail.com</a><br>Nicole Gluch: +972 54 524 4777 &middot; <a href="mailto:nicolegluch@gmail.com" style="color:inherit;">nicolegluch@gmail.com</a></p>
+        </div>
+        <div>
+          <h4 style="font-size:13px;font-weight:700;margin-bottom:8px;">HOURS</h4>
+          <p style="font-size:14px;color:#444;line-height:1.7;">Sunday&ndash;Thursday, Israel Standard Time (UTC+2/+3). We work daily with clients across Canadian and US time zones &mdash; reach out by phone, WhatsApp or email and we'll find a time that suits you.</p>
+        </div>
+        <div>
+          <h4 style="font-size:13px;font-weight:700;margin-bottom:8px;">LICENSE</h4>
+          <p style="font-size:14px;color:#444;line-height:1.7;">Licensed Brokerage No. 312103135</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="section">
+    <div class="container">
+      <div class="placeholder" style="min-height:280px;">[Map: office location, Ra'anana]</div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>GLUCH REAL ESTATE</h4>
+        Licensed brokerage (No. 312103135). Sales, lettings &amp; property management across Ra'anana, Tel Aviv, Jerusalem and coastal Israel.
+      </div>
+      <div class="footer-col">
+        <h4>QUICK LINKS</h4>
+        <a href="developments.html">New Developments</a>
+        <a href="financing.html">Foreign Buyer Financing</a>
+        <a href="management.html">Property Management</a>
+        <a href="market-performance.html">Market Performance</a>
+      </div>
+      <div class="footer-col">
+        <h4>REGIONS</h4>
+        <span>Ra'anana</span><br><span>Tel Aviv</span><br><span>Jerusalem</span><br><span>Coastal Israel</span>
+      </div>
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        <span>Hatayasim Street, Ra&#39;anana, Israel</span><br><span>+972 54 595 0600</span><br><span><a href="mailto:ericgluch@gmail.com" style="color:inherit;text-decoration:none;">ericgluch@gmail.com</a></span>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; Gluch Real Estate Ltd. &middot; Licensed Brokerage No. 312103135</div>
+  </div>
+</footer>
+
+
+<script>
+(function () {
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if (!toggle || !nav) return;
+  toggle.addEventListener('click', function () {
+    var isOpen = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+</body>
+</html>
