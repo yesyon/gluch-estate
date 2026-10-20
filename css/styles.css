@@ -662,3 +662,47 @@ textarea {
   .logo-img { height: 36px; }
   .btn-contact-header { padding: 8px 14px; }
 }
+
+/* ---------- Featured development ---------- */
+.featured-dev {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 28px;
+  border: 1px solid var(--color-border);
+  padding: 20px;
+  margin-bottom: 8px;
+}
+.featured-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.featured-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: var(--color-bg-alt);
+}
+.featured-gallery .featured-main {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+}
+.featured-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.featured-title { font-size: 24px; }
+.featured-price { font-size: 16px; }
+.featured-desc { font-size: 14px; color: #444; line-height: 1.6; }
+.featured-list {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  padding-left: 18px;
+  line-height: 1.7;
+}
+.badge-status { background: var(--color-text); }
+@media (max-width: 800px) {
+  .featured-dev { grid-template-columns: 1fr; padding: 14px; }
+}
