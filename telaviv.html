@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tel Aviv Developments — Gluch Real Estate</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="images/gluch-logo-header.png" alt="Gluch Real Estate Ltd." class="logo-img"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="developments.html" class="active">New Developments</a>
+      <a href="financing.html">Foreign Buyer Financing</a>
+      <a href="management.html">Property Management</a>
+      <a href="market-performance.html">Market Performance</a>
+      <a href="about.html">About Us</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary btn-small btn-contact-header">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="section-tight">
+    <div class="container">
+      <p style="font-size:13px;margin-bottom:8px;"><a href="developments.html" style="color:var(--color-text-secondary);text-decoration:none;">&larr; All regions</a></p>
+      <h1 style="font-size:32px;margin-bottom:6px;">Tel Aviv developments</h1>
+      <p style="font-size:14px;color:var(--color-text-secondary);">New-build and off-plan homes in Tel Aviv and on its doorstep &mdash; Israel's commercial and cultural center.</p>
+    </div>
+  </section>
+
+  <!-- TEL AVIV DEVELOPMENTS -->
+  <section class="section-tight" id="telaviv">
+    <div class="container">
+      <div class="featured-dev" id="haatzmaut-76">
+        <div class="featured-gallery">
+          <img class="featured-main" src="https://treedis-cdn.yad2.co.il/projects/1000343/assets/mainImage/3111bb54-4757-4868-8220-3e6e0de4ac7a.webp" alt="Sderot HaAtzmaut 76, Bat Yam — project rendering" loading="lazy">
+          <img src="https://treedis-cdn.yad2.co.il/projects/1000343/assets/gallery/a241ef73-9143-47f7-b7b3-3d20281677ba.webp" alt="Sderot HaAtzmaut 76, Bat Yam — rendering" loading="lazy">
+          <img src="https://treedis-cdn.yad2.co.il/projects/1000343/assets/gallery/e524b044-c33d-4ddf-88fd-95ae345d72d9.webp" alt="Sderot HaAtzmaut 76, Bat Yam — rendering" loading="lazy">
+          <img src="https://treedis-cdn.yad2.co.il/projects/1000343/assets/gallery/f3fec79e-d4a3-43b0-baa3-c3fdf8fb3c50.webp" alt="Sderot HaAtzmaut 76, Bat Yam — rendering" loading="lazy">
+        </div>
+        <div class="featured-info">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span class="badge">Tel Aviv &middot; Southern Edge</span>
+            <span class="badge badge-status">Under Construction</span>
+          </div>
+          <h2 class="featured-title">Sderot HaAtzmaut 76, Bat Yam</h2>
+          <p class="featured-price">Prices starting from <strong>NIS 2,700,000</strong></p>
+          <h3 style="font-size:16px;">Why this opportunity stands out</h3>
+          <ul class="featured-list">
+            <li><strong>Light rail station at the foot of the building</strong> &ndash; direct, effortless access into Tel Aviv and beyond.</li>
+            <li><strong>Sea views just 900 metres from the shoreline</strong> &ndash; lifestyle and rental appeal combined.</li>
+            <li><strong>Tel Aviv overflow effect</strong> &ndash; just 2 city blocks from the Tel Aviv municipal boundary. As prices in Tel Aviv continue to climb, demand is being pushed outward, driving strong capital appreciation in surrounding areas.</li>
+            <li><strong>Active gentrification in the immediate neighbourhood</strong> &ndash; urban renewal, infrastructure upgrades and rising desirability creating additional upside potential.</li>
+          </ul>
+          <h3 style="font-size:16px;">Exceptional value, rare entry point</h3>
+          <p class="featured-desc">Finding a sea-view property, steps from light rail, bordering Tel Aviv &mdash; at this price point &mdash; is becoming nearly impossible. This is not just an entry-level purchase. It&rsquo;s a strategic position ahead of continued growth.</p>
+          <a href="contact.html" class="btn btn-primary" style="width:fit-content;">Enquire about this development</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>GLUCH REAL ESTATE</h4>
+        Licensed brokerage (No. 312103135). Sales, lettings &amp; property management across Ra'anana, Tel Aviv, Jerusalem and coastal Israel.
+      </div>
+      <div class="footer-col">
+        <h4>QUICK LINKS</h4>
+        <a href="financing.html">Foreign Buyer Financing</a>
+        <a href="management.html">Property Management</a>
+        <a href="market-performance.html">Market Performance</a>
+      </div>
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        <span>Hatayasim Street, Ra&#39;anana, Israel</span><br><span>+972 54 595 0600</span><br><span><a href="mailto:ericgluch@gmail.com" style="color:inherit;text-decoration:none;">ericgluch@gmail.com</a></span>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; Gluch Real Estate Ltd. &middot; Licensed Brokerage No. 312103135</div>
+  </div>
+</footer>
+
+
+<script>
+(function () {
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if (!toggle || !nav) return;
+  toggle.addEventListener('click', function () {
+    var isOpen = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+</body>
+</html>
