@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coastal Israel Developments — Gluch Real Estate</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="images/gluch-logo-header.png" alt="Gluch Real Estate Ltd." class="logo-img"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="developments.html" class="active">New Developments</a>
+      <a href="financing.html">Foreign Buyer Financing</a>
+      <a href="management.html">Property Management</a>
+      <a href="market-performance.html">Market Performance</a>
+      <a href="about.html">About Us</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary btn-small btn-contact-header">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="section-tight">
+    <div class="container">
+      <p style="font-size:13px;margin-bottom:8px;"><a href="developments.html" style="color:var(--color-text-secondary);text-decoration:none;">&larr; All regions</a></p>
+      <h1 style="font-size:32px;margin-bottom:6px;">Coastal Israel developments</h1>
+      <p style="font-size:14px;color:var(--color-text-secondary);">New-build homes in Israel's fast-growing coastal cities &mdash; locations we've identified ahead of the wider market.</p>
+    </div>
+  </section>
+
+  <!-- COASTAL ISRAEL DEVELOPMENTS -->
+  <section class="section-tight" id="coastal">
+    <div class="container">
+      <div class="featured-dev" id="ashdod-new-north">
+        <div class="featured-gallery">
+          <img class="featured-main" src="images/coastal-ashdod-north-1.jpg" alt="Jabotinsky Street, Ashdod — penthouse terrace with sea view" loading="lazy">
+          <img src="images/coastal-ashdod-north-2.jpg" alt="Jabotinsky Street, Ashdod — residential towers and street-level retail" loading="lazy">
+          <img src="images/coastal-ashdod-north-3.jpg" alt="Jabotinsky Street, Ashdod — covered terrace overlooking the city and sea" loading="lazy">
+          <img src="images/coastal-ashdod-north-4.jpg" alt="Jabotinsky Street, Ashdod — apartment living room and kitchen" loading="lazy">
+        </div>
+        <div class="featured-info">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span class="badge">Ashdod &middot; Coastal Israel</span>
+            <span class="badge badge-status">Final Stages of Construction</span>
+          </div>
+          <h2 class="featured-title">Jabotinsky Street, New North Ashdod</h2>
+          <p class="featured-price">Prices starting from <strong>NIS 2,000,000</strong></p>
+          <p class="featured-price" style="font-size:14px;background:var(--color-bg-alt);padding:10px 12px;border-left:3px solid var(--color-accent);"><strong>Developer loan of NIS 1,000,000</strong> &mdash; interest-free, not index-linked, over 15 years.</p>
+          <p class="featured-desc">A high-quality residential complex of four buildings of up to 27 floors with around 650 apartments, plus commercial and leisure areas, in Ashdod's New North &mdash; the city's fastest-growing area and a magnet for young families. Designed by BLK Architects, one of Israel's leading architectural firms.</p>
+          <ul class="featured-list">
+            <li>2- to 5-room apartments and 6-room penthouses</li>
+            <li>Designed lobbies, residents' gym, co-working space and children's play areas</li>
+            <li>Shops, restaurants and leisure on site</li>
+            <li>A+ energy rating and sustainable, green-standard construction</li>
+            <li>Close to the BIG and Star Center shopping centres, the train station and public transport</li>
+            <li>Next to the Lachish River Park and its sports complex, with an education campus nearby</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:fit-content;">Enquire about this development</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>GLUCH REAL ESTATE</h4>
+        Licensed brokerage (No. 312103135). Sales, lettings &amp; property management across Ra'anana, Tel Aviv, Jerusalem and coastal Israel.
+      </div>
+      <div class="footer-col">
+        <h4>QUICK LINKS</h4>
+        <a href="financing.html">Foreign Buyer Financing</a>
+        <a href="management.html">Property Management</a>
+        <a href="market-performance.html">Market Performance</a>
+      </div>
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        <span>Hatayasim Street, Ra&#39;anana, Israel</span><br><span>+972 54 595 0600</span><br><span><a href="mailto:ericgluch@gmail.com" style="color:inherit;text-decoration:none;">ericgluch@gmail.com</a></span>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; Gluch Real Estate Ltd. &middot; Licensed Brokerage No. 312103135</div>
+  </div>
+</footer>
+
+
+<script>
+(function () {
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if (!toggle || !nav) return;
+  toggle.addEventListener('click', function () {
+    var isOpen = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+</body>
+</html>
