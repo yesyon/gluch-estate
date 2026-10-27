@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jerusalem Developments — Gluch Real Estate</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="images/gluch-logo-header.png" alt="Gluch Real Estate Ltd." class="logo-img"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="developments.html" class="active">New Developments</a>
+      <a href="financing.html">Foreign Buyer Financing</a>
+      <a href="management.html">Property Management</a>
+      <a href="market-performance.html">Market Performance</a>
+      <a href="about.html">About Us</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary btn-small btn-contact-header">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="section-tight">
+    <div class="container">
+      <p style="font-size:13px;margin-bottom:8px;"><a href="developments.html" style="color:var(--color-text-secondary);text-decoration:none;">&larr; All regions</a></p>
+      <h1 style="font-size:32px;margin-bottom:6px;">Jerusalem developments</h1>
+      <p style="font-size:14px;color:var(--color-text-secondary);">New-build homes in Jerusalem &mdash; strong, steady demand from the diaspora market.</p>
+    </div>
+  </section>
+
+  <!-- JERUSALEM DEVELOPMENTS -->
+  <section class="section-tight" id="jerusalem">
+    <div class="container">
+      <div class="featured-dev" id="shimoni-katamon">
+        <div class="featured-gallery featured-gallery-2">
+          <img class="featured-main" src="images/jerusalem-shimoni-1.jpg" alt="Shimoni Street, Katamon, Jerusalem — twin towers with light rail and park" loading="lazy">
+          <img src="images/jerusalem-shimoni-2.jpg" alt="Shimoni Street, Katamon, Jerusalem — evening aerial view" loading="lazy">
+          <img src="images/jerusalem-shimoni-3.jpg" alt="Shimoni Street, Katamon, Jerusalem — living room with terrace and hill views" loading="lazy">
+        </div>
+        <div class="featured-info">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span class="badge">Jerusalem &middot; Katamon</span>
+            <span class="badge badge-status">Pre-Sale</span>
+          </div>
+          <h2 class="featured-title">Shimoni Street, Katamon, Jerusalem</h2>
+          <p class="featured-price">Prices starting from <strong>NIS 3,100,000</strong></p>
+          <p class="featured-desc">Two iconic 17-storey residential towers with a mixed-use podium, rising opposite the Rakal light rail station and the new Highway 16 interchange. Wake up to panoramic views over the Jerusalem hills, framed by wide glass doors and sunlit terraces &mdash; open living spaces, warm natural materials and light that changes with the Jerusalem sky.</p>
+          <ul class="featured-list">
+            <li>Only four apartments per floor &mdash; 3-, 5- and 6-room apartments, plus large half-floor penthouses</li>
+            <li>Select apartments include a sukkah balcony</li>
+            <li>4th-floor lobby level with a synagogue and library, a scenic overlook, and a dedicated area for building sukkot</li>
+            <li>Street-level shops and modern offices on floors 0&ndash;5, right at your doorstep</li>
+            <li>Opposite the Rakal light rail station, adjacent to Highway 16</li>
+            <li>Attractive 20/80 payment plan</li>
+            <li>Mortgage consulting and legal services included</li>
+            <li>10-year builder&rsquo;s warranty; floor plans available on request</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:fit-content;">Enquire about this development</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>GLUCH REAL ESTATE</h4>
+        Licensed brokerage (No. 312103135). Sales, lettings &amp; property management across Ra'anana, Tel Aviv, Jerusalem and coastal Israel.
+      </div>
+      <div class="footer-col">
+        <h4>QUICK LINKS</h4>
+        <a href="financing.html">Foreign Buyer Financing</a>
+        <a href="management.html">Property Management</a>
+        <a href="market-performance.html">Market Performance</a>
+      </div>
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        <span>Hatayasim Street, Ra&#39;anana, Israel</span><br><span>+972 54 595 0600</span><br><span><a href="mailto:ericgluch@gmail.com" style="color:inherit;text-decoration:none;">ericgluch@gmail.com</a></span>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; Gluch Real Estate Ltd. &middot; Licensed Brokerage No. 312103135</div>
+  </div>
+</footer>
+
+
+<script>
+(function () {
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if (!toggle || !nav) return;
+  toggle.addEventListener('click', function () {
+    var isOpen = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+</body>
+</html>
